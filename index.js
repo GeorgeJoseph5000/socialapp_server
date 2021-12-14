@@ -9,7 +9,7 @@ const authRoute = require("./routes/auth")
 const postsRoute = require("./routes/posts")
 dotenv.config()
 
-/*app.use(function (req, res, next) {
+app.use(function (req, res, next) {
     // Website you wish to allow to connect
     res.setHeader("Access-Control-Allow-Origin", "*");
   
@@ -32,7 +32,7 @@ dotenv.config()
     // Pass to next layer of middleware
     next();
   });
-  */
+  
 
 
 const uri = "mongodb://localhost:27017/socialmedia"
@@ -51,4 +51,4 @@ app.use("/api/auth", authRoute)
 app.use("/api/posts", postsRoute)
 
 
-app.listen(1234)
+app.listen(80)
