@@ -51,4 +51,4 @@ app.use("/api/auth", authRoute)
 app.use("/api/posts", postsRoute)
 
 
-app.listen(80)
+app.listen(process.env.PORT || 80)
