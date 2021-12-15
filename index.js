@@ -35,7 +35,7 @@ app.use(function (req, res, next) {
   
 
 
-const uri = "mongodb+srv://georgejoseph5000:Ge24112003@cluster0.9q9y3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const uri = "mongodb+srv://georgejoseph:[password]@cluster0.9q9y3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
 
 app.get("/", (req, res)=>{
